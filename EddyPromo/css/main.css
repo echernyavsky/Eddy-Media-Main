@@ -1,0 +1,186 @@
+﻿body {
+    background: url(/images/background.png) no-repeat;
+    -ms-background-size: cover;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.0);
+    border: 0;
+    height: 93px;
+}
+
+.navbar-brand {
+    height: 93px;
+}
+
+.navbar-nav > li > a {
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #d9d9d9;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: white;
+}
+
+div.footer {
+    padding-top: 10px;
+    position: absolute;
+    /*bottom: 0px;*/
+    height: 120px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+div.eddy-logo {
+    height: 54px;
+    margin-bottom: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background: url(/images/nigga-logo.png) no-repeat center;
+}
+
+ul.contacts {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+div.footer-column-header {
+    font-weight: 900;
+}
+
+ul.footer-column-items {
+    padding-left: 16px;
+}
+
+    ul.footer-column-items > li > a {
+        color: black;
+    }
+
+        ul.footer-column-items > li > a:hover {
+            color: grey;
+            text-decoration: none;
+        }
+
+.panel, .panel-primary {
+    border-radius: 0;
+    background-color: rgba(255, 255, 255, 0.0);
+}
+
+    .panel > .panel-heading {
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+div.news {
+    margin-top: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+    min-height: 200px;
+    margin-bottom: 100px;
+}
+
+div.single-news {
+    border: 1px solid #808080;
+    min-height: 200px;
+    border-left: 0;
+}
+
+    div.single-news:first-of-type {
+        border-left: 1px solid #808080;
+    }
+
+    div.single-news:nth-child(3n) {
+        background: #CCCDCD;
+        background: rgba(205, 205, 205, 0.8);
+    }
+
+    div.single-news:nth-child(3n+1) {
+        background: #CCCDCD;
+        background: rgba(205, 205, 205, 0.6);
+    }
+
+    div.single-news:nth-child(3n+2) {
+        background: #CCCDCD;
+        background: rgba(205, 205, 205, 0.4);
+    }
+
+    div.single-news:hover {
+        background: #ffffff;
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+.panel-primary {
+    border-color: #808080;
+}
+
+    .panel-primary > .panel-heading {
+        border-color: #808080;
+    }
+
+div.single-item {
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px;
+    min-height: 350px;
+    text-align: center;
+    border-left: 1px solid #808080;
+}
+
+    div.single-item:first-of-type {
+        border-left: 0;
+    }
+
+    div.single-item:nth-child(even) {
+        background: #CCCDCD;
+        background: rgba(205, 205, 205, 0.8);
+    }
+
+    div.single-item:nth-child(odd) {
+        background: #CCCDCD;
+        background: rgba(255, 255, 255, 0.5);
+    }
+
+    div.single-item:hover {
+        background: #ffffff;
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+#wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+.panel-body {
+    padding: 0;
+}
+
+div.contact-phone {
+    font-size: 16px;
+    color: #ffffff;
+    padding-top: 30px;
+}
+
+div.request-a-call {
+    color: #ffffff;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+    div.request-a-call > a {
+        color: #ffffff;
+        text-decoration: none;
+        border-bottom: 1px dashed #ffffff;
+    }
+
+    div.request-a-call > a:hover {
+        color: #ffffff;
+        text-decoration: none;
+        border-bottom: 1px solid #ffffff;
+    }
