@@ -1,13 +1,29 @@
-﻿function submitCallRequest() {
-    // TODO: validate data
+﻿var fieldIds = {
+    phone: '#phone',
+    name: '#name',
+    callTime: '#expectedTime'
+}
+
+function submitCallRequest() {
+    helpers.showLoader();
 
     var data = {
-        phone: $('#phone').val(),
-        name: $('#name').val(),
-        callTime: $('#expectedTime').val()
+        phone: $(fieldIds.phone).val(),
+        name: $(fieldIds.name).val(),
+        callTime: $(fieldIds.callTime).val()
     };
 
-    helpers.submitCallRequest(data);
+    var validationResult = helpers.validateRequestCallForm(data);
+
+    if (validationResult.errors.length == 0) {
+        helpers.submitCallRequest(data);
+    } else {
+        validationResult.errors.forEach(function(item) {
+            toastr.warning(item);
+        });
+    }
+
+    helpers.hideLoader();
 };
 
 var timepickerOptions = {
@@ -34,7 +50,7 @@ $(document).ready(function () {
         "hideMethod": "fadeOut"
     }
 
-    $('#expectedTime').timepicker(timepickerOptions);
-    $('#expectedTime').timepicker('setTime', new Date());
+    $(fieldIds.callTime).timepicker(timepickerOptions);
+    $(fieldIds.callTime).timepicker('setTime', new Date());
     $('#confirm-call-request').on('click', submitCallRequest);
 });
