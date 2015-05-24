@@ -38,7 +38,7 @@ Helpers.prototype.validateRequestCallForm = function (data) {
         result.fields.push(fieldIds.callTime);
     }
 
-    if (data.phone.match(this.phone) == null || data.phone.match(this.phone).length == 0 || data.phone.match(this.phone)[0] == "") {
+    if (data.phone.match(this.phoneNumberRegexp) == null || data.phone.match(this.phoneNumberRegexp).length == 0 || data.phone.match(this.phoneNumberRegexp)[0] == "") {
         result.errors.push('Номер телефона имеет неверный формат');
         result.fields.push(fieldIds.phone);
     }
