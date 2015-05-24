@@ -3,30 +3,27 @@
 };
 
 Helpers.prototype.showLoader = function() {
-    alert('showing');
-    // TODO
+    $('.loader').show();
 };
 
 Helpers.prototype.hideLoader = function() {
-    alert('hiding');
-
-    // TODO
+    $('.loader').hide();
 };
 
 Helpers.prototype.submitCallRequest = function (data) {
     this.showLoader();
 
     $.ajax({
-        url: '/handleRequestPhoneCall.php',
+        url: '/handleRequestCall.php',
         type: 'POST',
         data: JSON.stringify(data),
         dataType: 'json',
         contentType: "application/json;charset=utf-8",
         success: function() {
-            // TODO: show success toastr message.
+            toastr.success('Вам перезвонят в ближайшее время');
         },
         error: function() {
-            // TODO: show error message
+            toastr.error('Серверная ошибка');
         },
         complete: this.hideLoader,
     });

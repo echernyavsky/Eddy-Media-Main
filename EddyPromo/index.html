@@ -2,160 +2,171 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/jquery.timepicker.css" />
+    <link rel="stylesheet" type="text/css" href="./css/toastr.min.css" />
     <link rel="stylesheet" type="text/css" href="./css/main.css" />
     <title>Eddy Media</title>
 </head>
 <body>
-<div id="wrapper">
-    <nav class="navbar navbar-default">
+    <div id="wrapper">
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                        <img src="./images/white-logo.png" />
+                    </a>
+                </div>
+                <div class="navbar-header navbar-right">
+                    <div class="contact-phone">+375 29 000 00 00</div>
+                    <div class="request-a-call">
+                        <a href="#" data-toggle="modal" data-target="#request-call">Заказать звонок</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
         <div class="container">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">
-                    <img src="./images/white-logo.png"/>
-                </a>
-            </div>
-            <div class="navbar-header navbar-right">
-                <div class="contact-phone">+375 29 000 00 00</div>
-                <div class="request-a-call"><a href="#" data-toggle="modal" data-target="#request-call">Заказать звонок</a>
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="panel panel-primary">
+                    <div class="panel-heading text-center">
+                        <h2>Маркетинговое агенство</h2>
+                        <h3>< Слоган ...... Слоган ...... Слоган ></h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="col-md-4 single-item">Карусель</div>
+                        <div class="col-md-4 single-item">Карусель</div>
+                        <div class="col-md-4 single-item">Карусель</div>
+                    </div>
                 </div>
             </div>
+            <div class="col-md-2"></div>
         </div>
-    </nav>
-    <div class="container">
-        <div class="col-md-2"></div>
-        <div class="col-md-8">
-            <div class="panel panel-primary">
-                <div class="panel-heading text-center">
-                    <h2>Маркетинговое агенство</h2>
-                    <h3>< Слоган ...... Слоган ...... Слоган ></h3>
-                </div>
-                <div class="panel-body">
-                    <div class="col-md-4 single-item">Карусель</div>
-                    <div class="col-md-4 single-item">Карусель</div>
-                    <div class="col-md-4 single-item">Карусель</div>
-                </div>
-            </div>
+        <div class="news">
+            <div class="col-md-2 single-news">1</div>
+            <div class="col-md-2 single-news">2</div>
+            <div class="col-md-2 single-news">3</div>
+            <div class="col-md-2 single-news">4</div>
+            <div class="col-md-2 single-news">5</div>
+            <div class="col-md-2 single-news">6</div>
         </div>
-        <div class="col-md-2"></div>
-    </div>
-    <div class="news">
-        <div class="col-md-2 single-news">1</div>
-        <div class="col-md-2 single-news">2</div>
-        <div class="col-md-2 single-news">3</div>
-        <div class="col-md-2 single-news">4</div>
-        <div class="col-md-2 single-news">5</div>
-        <div class="col-md-2 single-news">6</div>
-    </div>
 
-    <div class="footer">
-        <div class="col-md-2">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <div class="eddy-logo"></div>
+        <div class="footer">
+            <div class="col-md-2">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="eddy-logo"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        © Eddy 2015
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    © Eddy 2015
+            <div class="col-md-8">
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-12 footer-column-header">
+                            Продвижение сайтов
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="footer-column-items">
+                                <li><a href="#">Создание чего-то такого всякого</a></li>
+                                <li><a href="#">Улучшение чего-то такого всякого</a></li>
+                                <li><a href="#">Увеличение чего-то такого всякого</a></li>
+                                <li><a href="#">Улучшение чего-то такого всякого</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-12 footer-column-header">
+                            Создание сайтов
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="footer-column-items">
+                                <li><a href="#">Создание чего-то такого всякого</a></li>
+                                <li><a href="#">Улучшение чего-то такого всякого</a></li>
+                                <li><a href="#">Увеличение чего-то такого всякого</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-12 footer-column-header">
+                            Анимацонные ролики
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="footer-column-items">
+                                <li><a href="#">Создание чего-то такого всякого</a></li>
+                                <li><a href="#">Улучшение чего-то такого всякого</a></li>
+                                <li><a href="#">Увеличение чего-то такого всякого</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-8">
-            <div class="col-md-4">
+            <div class="col-md-2">
                 <div class="row">
                     <div class="col-md-12 footer-column-header">
-                        Продвижение сайтов
+                        Контакты
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <ul class="footer-column-items">
-                            <li><a href="#">Создание чего-то такого всякого</a></li>
-                            <li><a href="#">Улучшение чего-то такого всякого</a></li>
-                            <li><a href="#">Увеличение чего-то такого всякого</a></li>
-                            <li><a href="#">Улучшение чего-то такого всякого</a></li>
+                        <ul class="contacts">
+                            <li>+375 29 769 86 10</li>
+                            <li>+375 29 170 76 62</li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="row">
-                    <div class="col-md-12 footer-column-header">
-                        Создание сайтов
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <ul class="footer-column-items">
-                            <li><a href="#">Создание чего-то такого всякого</a></li>
-                            <li><a href="#">Улучшение чего-то такого всякого</a></li>
-                            <li><a href="#">Увеличение чего-то такого всякого</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="row">
-                    <div class="col-md-12 footer-column-header">
-                        Анимацонные ролики
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <ul class="footer-column-items">
-                            <li><a href="#">Создание чего-то такого всякого</a></li>
-                            <li><a href="#">Улучшение чего-то такого всякого</a></li>
-                            <li><a href="#">Увеличение чего-то такого всякого</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-2">
-            <div class="row">
-                <div class="col-md-12 footer-column-header">
-                    Контакты
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <ul class="contacts">
-                        <li>+375 29 769 86 10</li>
-                        <li>+375 29 170 76 62</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
 
+        </div>
     </div>
-</div>
 
-<div class="modal" id="request-call">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">Заказать звонок</h4>
-            </div>
-            <div class="modal-body">
-                <div class="form-group">
-                    <label>Как Вас зовут?</label>
-                    <input type="text" id="name" class="form-control" />
+    <div class="loader">Loading...</div>
+
+    <div class="modal" id="request-call">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Заказать звонок</h4>
                 </div>
-                <div class="form-group">
-                    <label>Ваш номер телефона</label>
-                    <input type="text" id="phone" class="form-control"/>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>Как Вас зовут?</label>
+                        <input type="text" id="name" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label>Ваш номер телефона</label>
+                        <input type="text" id="phone" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label>Желаемое время звонка</label>
+                        <input type="text" id="expectedTime" class="form-control" style="width: 150px;" />
+                    </div>
                 </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-primary" id="confirm-call-request">Заказать</button>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="confirm-call-request">Заказать</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<script src="./js/jquery-2.1.4.min.js"></script>
+    <script src="./js/jquery-2.1.4.min.js"></script>
+    <script src="./js/jquery.timepicker.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/toastr.min.js"></script>
     <script type="text/javascript" src="./js/helpers.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
 </body>
